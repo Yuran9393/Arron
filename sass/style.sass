@@ -1,0 +1,26 @@
+@import _normalize.sass
+@font-face 
+  font-family: 'Gilroy-Semibold'
+  src: url('Gilroy-Semibold.eot')
+  src: url('../fonts/Gilroy-Semibold.eot?#iefix') format('embedded-opentype'), url('../fonts/Gilroy-Semibold.svg#Gilroy-Semibold') format('svg'), url('../fonts/Gilroy-Semibold.ttf') format('truetype'), url('../fonts/Gilroy-Semibold.woff') format('woff'), url('../fonts/Gilroy-Semibold.woff2') format('woff2')
+  font-weight: normal
+  font-style: normal
+@mixin montserrat
+    font-family: 'Montserrat', sans-serif
+@mixin flex
+    display: flex
+    align-items: center
+    justify-content: space-between
+body
+    font-family: Gilroy-Semibold
+    padding: 30px
+li
+  list-style: none
+a
+  text-decoration: none
+.header
+  &_body
+    @include flex
+  &_menu
+    @include flex
+    
